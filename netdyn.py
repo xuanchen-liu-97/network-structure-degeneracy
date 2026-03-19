@@ -234,7 +234,7 @@ class KuramotoDynamics(NetworkDynamics):
             init_state = np.random.uniform(-np.pi, np.pi, self.N)
         
         raw_data = super().simulate(A, T_steps, init_state)
-        return np.mod(raw_data + np.pi, 2*np.pi) - np.pi
+        return raw_data
 
 
 # ==============================================================
