@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error
 # LASSO 网络重构
 # ==============================================================
 
-def LASSO_reconstruct_network(X, model, rho=None, val_ratio=0.2,
+def lasso_reconstruct_network(X, model, rho=None, val_ratio=0.2,
                          n_alphas=20, threshold=0.01):
     """
     基于 LASSO 从时间序列重构网络邻接矩阵。
